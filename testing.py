@@ -45,5 +45,10 @@ class TestContarVocales(unittest.TestCase):
     def test_contar_REMAR(self):
         resultado = contar_vocales( "REMAR")
         self.assertEqual(resultado, { "a" : 1 ,"e" : 1})   
+    
+
+    def test_contar_hola_mama(self):
+        resultado = contar_vocales( "hola_mama")
+        self.assertEqual(resultado, { "a" : 3 ,"o" : 1})   
                          
 unittest.main()
